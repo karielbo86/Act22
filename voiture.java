@@ -3,6 +3,7 @@ class Voiture{
 	String m_nomMarque;
 	int m_numMatricule;
 	String m_couleur;
+	String m_typemoteur;
 
 	//constructeur par defaut
 	public Voiture(){
@@ -10,15 +11,17 @@ class Voiture{
 		m_nomMarque = "Sans marque";
 		m_couleur = "Sans Couleur"
 		m_numMatricule = 0;
+		m_typemoteur = "Sans type":
 	}
 
 	//constructeur avec paramètres
-	public Voiture(String marque, String couleur, int portes, int matricule){
+	public Voiture(String marque, String couleur, int portes, int matricul, String typemoteur){
 
 		m_nomMarque = marque;
 		m_couleur= couleur;
 		m_nbPortes = portes;
 		m_numMatricule = matricule;
+		m_typemoteur = typemoteur;
 	}
 
 	///****************ACCESSEURS*********************///
@@ -40,6 +43,10 @@ class Voiture{
 		return m_numMatricule;
 	}
 
+	public String getTypeMoteur(){
+		return m_typemoteur;
+	}
+
 	//************MUTATEURS**********************/
 	public void setMarque(String marque){
 			m_nomMarque = marque;
@@ -56,6 +63,11 @@ class Voiture{
 
 	public void setMatricule(int matricule){
 		m_numMatricule = matricule;
+	}
+
+	public void setTypeMoteur(String typemoteur){
+
+		m_typemoteur = typemoteur;
 	}
 
 
