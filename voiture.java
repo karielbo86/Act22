@@ -21,5 +21,42 @@ class Voiture{
 		m_numMatricule = matricule;
 	}
 
+	///****************ACCESSEURS*********************///
+	public String getMarque(){
+		return m_nomMarque;
+	}
+
+	public String getCouleur(){
+
+		return m_couleur;
+	}
+
+	public int getPortes(){
+
+		return m_nbPortes;
+	}
+
+	public int getMatricule(){
+		return m_numMatricule;
+	}
+
+	//************MUTATEURS**********************/
+	public void setMarque(String marque){
+			m_nomMarque = marque;
+
+	}
+
+	public void setCouleur(String couleur){
+		m_couleur = couleur;
+	}
+
+	public void setPortes(int portes){
+		m_nbPortes = portes;
+	}
+
+	public void setMatricule(int matricule){
+		m_numMatricule = matricule;
+	}
+
 
 }
